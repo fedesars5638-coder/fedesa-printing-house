@@ -1,0 +1,2536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#101010">
+
+    <title>Fedesa Printing and Stationery House | Bishoftu, Ethiopia</title>
+
+    <meta name="description" content="Shop stationery, school supplies, office materials, printing, photocopying, scanning and lamination services at Fedesa Printing and Stationery House in Bishoftu, Ethiopia.">
+
+    <style>
+        :root {
+            --gold: #d9ad45;
+            --gold-light: #f4d98a;
+            --black: #101010;
+            --black-light: #181818;
+            --dark-card: #202020;
+            --white: #ffffff;
+            --muted: #b9b9b9;
+            --border: rgba(217, 173, 69, 0.22);
+            --green: #25d366;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 90px;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: var(--black);
+            color: var(--white);
+            line-height: 1.6;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        button,
+        input,
+        select {
+            font: inherit;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .container {
+            width: min(1180px, 92%);
+            margin: auto;
+        }
+
+        .gold {
+            color: var(--gold);
+        }
+
+        .section {
+            padding: 75px 0;
+        }
+
+        .section-heading {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .section-heading .eyebrow {
+            color: var(--gold);
+            font-size: 0.8rem;
+            font-weight: bold;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .section-heading h2 {
+            font-size: clamp(1.8rem, 4vw, 2.7rem);
+            margin: 10px 0;
+            line-height: 1.25;
+        }
+
+        .section-heading p {
+            color: var(--muted);
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        /* ANNOUNCEMENT BAR */
+
+        .announcement {
+            background: var(--gold);
+            color: #111;
+            text-align: center;
+            padding: 8px 12px;
+            font-size: 0.85rem;
+            font-weight: bold;
+        }
+
+        /* NAVIGATION */
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(16, 16, 16, 0.97);
+            border-bottom: 1px solid var(--border);
+            backdrop-filter: blur(12px);
+        }
+
+        .navbar {
+            min-height: 76px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            min-width: 0;
+        }
+
+        .brand-logo {
+            width: 47px;
+            height: 47px;
+            border: 2px solid var(--gold);
+            border-radius: 12px;
+            display: grid;
+            place-items: center;
+            color: var(--gold);
+            font-weight: 900;
+            font-size: 1.05rem;
+            flex-shrink: 0;
+        }
+
+        .brand-text strong {
+            display: block;
+            font-size: 0.94rem;
+            line-height: 1.3;
+        }
+
+        .brand-text span {
+            color: var(--gold);
+            font-size: 0.72rem;
+            letter-spacing: 1px;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 22px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #dedede;
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--gold);
+        }
+
+        .nav-order {
+            background: var(--gold);
+            color: #111 !important;
+            padding: 10px 15px;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .menu-toggle {
+            display: none;
+            border: 1px solid var(--border);
+            background: transparent;
+            color: var(--gold);
+            padding: 7px 12px;
+            border-radius: 6px;
+            font-size: 1.3rem;
+        }
+
+        /* HERO */
+
+        .hero {
+            position: relative;
+            overflow: hidden;
+            padding: 95px 0 85px;
+            background:
+                radial-gradient(circle at 85% 20%, rgba(217,173,69,0.14), transparent 30%),
+                radial-gradient(circle at 10% 90%, rgba(217,173,69,0.07), transparent 28%),
+                #101010;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            right: -130px;
+            top: 70px;
+            width: 400px;
+            height: 400px;
+            border: 1px solid rgba(217,173,69,0.12);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.25fr 0.75fr;
+            align-items: center;
+            gap: 55px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-label {
+            display: inline-block;
+            color: var(--gold-light);
+            border: 1px solid var(--border);
+            background: rgba(217,173,69,0.07);
+            padding: 8px 13px;
+            border-radius: 30px;
+            font-size: 0.8rem;
+            margin-bottom: 22px;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 5.4vw, 4.6rem);
+            line-height: 1.08;
+            letter-spacing: -1.5px;
+            margin-bottom: 23px;
+        }
+
+        .hero h1 span {
+            color: var(--gold);
+        }
+
+        .hero-description {
+            color: #c4c4c4;
+            max-width: 570px;
+            font-size: 1.05rem;
+            margin-bottom: 30px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 13px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            border: none;
+            border-radius: 7px;
+            padding: 13px 20px;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        .btn-gold {
+            background: var(--gold);
+            color: #111;
+        }
+
+        .btn-gold:hover {
+            background: var(--gold-light);
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            border: 1px solid var(--gold);
+            color: var(--gold);
+            background: transparent;
+        }
+
+        .btn-outline:hover {
+            background: rgba(217,173,69,0.1);
+        }
+
+        .hero-card {
+            background: linear-gradient(145deg, #242424, #151515);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            padding: 32px;
+            box-shadow: 0 25px 70px rgba(0,0,0,0.3);
+        }
+
+        .hero-card-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+
+        .hero-card-top h3 {
+            font-size: 1.2rem;
+        }
+
+        .gold-star {
+            color: var(--gold);
+            font-size: 1.5rem;
+        }
+
+        .hero-feature {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 15px 0;
+            border-bottom: 1px solid #343434;
+        }
+
+        .hero-feature:last-child {
+            border-bottom: none;
+        }
+
+        .feature-icon {
+            width: 45px;
+            height: 45px;
+            display: grid;
+            place-items: center;
+            flex-shrink: 0;
+            border-radius: 10px;
+            background: rgba(217,173,69,0.12);
+            font-size: 1.3rem;
+        }
+
+        .hero-feature strong {
+            display: block;
+            font-size: 0.96rem;
+        }
+
+        .hero-feature small {
+            color: var(--muted);
+        }
+
+        /* BENEFITS */
+
+        .benefits {
+            background: #171717;
+            border-top: 1px solid #252525;
+            border-bottom: 1px solid #252525;
+            padding: 26px 0;
+        }
+
+        .benefit-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .benefit {
+            text-align: center;
+            padding: 8px;
+        }
+
+        .benefit span {
+            display: block;
+            font-size: 1.6rem;
+            margin-bottom: 5px;
+        }
+
+        .benefit strong {
+            font-size: 0.93rem;
+        }
+
+        .benefit p {
+            color: var(--muted);
+            font-size: 0.82rem;
+        }
+
+        /* CATEGORIES */
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+        }
+
+        .category-card {
+            background: var(--black-light);
+            border: 1px solid #2b2b2b;
+            padding: 25px 18px;
+            border-radius: 12px;
+            text-align: center;
+            transition: 0.25s;
+            cursor: pointer;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--gold);
+        }
+
+        .category-card .category-icon {
+            font-size: 2.1rem;
+            margin-bottom: 10px;
+        }
+
+        .category-card h3 {
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+
+        .category-card p {
+            color: var(--muted);
+            font-size: 0.83rem;
+        }
+
+        /* PRODUCTS */
+
+        .products-section {
+            background: #151515;
+        }
+
+        .shop-toolbar {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 28px;
+            flex-wrap: wrap;
+        }
+
+        .search-box {
+            flex: 1;
+            min-width: 220px;
+        }
+
+        .search-box input,
+        .filter-select {
+            width: 100%;
+            min-height: 47px;
+            background: #202020;
+            border: 1px solid #383838;
+            color: white;
+            border-radius: 7px;
+            padding: 12px 14px;
+            outline: none;
+        }
+
+        .search-box input:focus,
+        .filter-select:focus {
+            border-color: var(--gold);
+        }
+
+        .filter-select {
+            width: 220px;
+        }
+
+        .results-count {
+            color: var(--muted);
+            font-size: 0.88rem;
+            margin-bottom: 16px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 18px;
+        }
+
+        .product-card {
+            display: flex;
+            flex-direction: column;
+            background: #202020;
+            border: 1px solid #303030;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(217,173,69,0.7);
+        }
+
+        .product-visual {
+            min-height: 125px;
+            display: grid;
+            place-items: center;
+            position: relative;
+            background:
+                radial-gradient(circle at center, rgba(217,173,69,0.12), transparent 65%),
+                #181818;
+            border-bottom: 1px solid #303030;
+        }
+
+        .product-emoji {
+            font-size: 3.1rem;
+        }
+
+        .product-category-label {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: rgba(217,173,69,0.13);
+            color: var(--gold-light);
+            padding: 4px 8px;
+            font-size: 0.65rem;
+            border-radius: 4px;
+        }
+
+        .product-info {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            padding: 15px;
+        }
+
+        .product-info h3 {
+            font-size: 0.96rem;
+            line-height: 1.4;
+            margin-bottom: 7px;
+        }
+
+        .product-description {
+            color: var(--muted);
+            font-size: 0.8rem;
+            margin-bottom: 12px;
+            flex: 1;
+        }
+
+        .product-price {
+            color: var(--gold-light);
+            font-size: 1.02rem;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        .price-note {
+            color: var(--muted);
+            font-size: 0.72rem;
+            font-weight: normal;
+        }
+
+        .add-to-cart {
+            width: 100%;
+            background: transparent;
+            border: 1px solid var(--gold);
+            color: var(--gold);
+            padding: 10px;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 0.84rem;
+            transition: 0.2s;
+        }
+
+        .add-to-cart:hover {
+            background: var(--gold);
+            color: #111;
+        }
+
+        .empty-results {
+            display: none;
+            text-align: center;
+            padding: 45px 15px;
+            color: var(--muted);
+            background: #202020;
+            border-radius: 10px;
+        }
+
+        .empty-results h3 {
+            color: white;
+            margin-bottom: 8px;
+        }
+
+        /* CART */
+
+        .cart-section {
+            background: #101010;
+        }
+
+        .cart-container {
+            max-width: 850px;
+            margin: auto;
+            background: #1b1b1b;
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 25px;
+        }
+
+        .cart-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .cart-header h3 {
+            font-size: 1.35rem;
+        }
+
+        .cart-badge {
+            background: var(--gold);
+            color: #111;
+            font-weight: bold;
+            min-width: 30px;
+            height: 30px;
+            border-radius: 50px;
+            display: grid;
+            place-items: center;
+            padding: 0 8px;
+        }
+
+        .cart-empty {
+            color: var(--muted);
+            text-align: center;
+            padding: 30px 10px;
+            border: 1px dashed #444;
+            border-radius: 8px;
+        }
+
+        .cart-empty span {
+            display: block;
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+
+        .cart-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .cart-item {
+            display: grid;
+            grid-template-columns: 1fr auto auto;
+            align-items: center;
+            gap: 15px;
+            padding: 14px 0;
+            border-bottom: 1px solid #343434;
+        }
+
+        .cart-item-name {
+            font-weight: bold;
+        }
+
+        .cart-item-price {
+            color: var(--gold-light);
+            font-size: 0.88rem;
+        }
+
+        .quantity-control {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+        }
+
+        .quantity-control button {
+            width: 29px;
+            height: 29px;
+            border: 1px solid #555;
+            background: #262626;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .quantity-control button:hover {
+            border-color: var(--gold);
+        }
+
+        .remove-item {
+            color: #ff8888;
+            background: transparent;
+            border: none;
+            font-size: 0.8rem;
+            margin-top: 5px;
+        }
+
+        .cart-summary {
+            margin-top: 22px;
+            padding-top: 18px;
+            border-top: 1px solid #414141;
+        }
+
+        .cart-total-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.1rem;
+            margin-bottom: 17px;
+        }
+
+        .cart-total-row strong {
+            color: var(--gold-light);
+            font-size: 1.4rem;
+        }
+
+        .cart-note {
+            color: var(--muted);
+            font-size: 0.82rem;
+            margin-bottom: 18px;
+        }
+
+        .cart-actions {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .cart-actions .btn {
+            flex: 1;
+        }
+
+        .btn-telegram {
+            background: var(--green);
+            color: #101010;
+        }
+
+        .btn-telegram:hover {
+            background: #52e487;
+        }
+
+        .btn-clear {
+            background: transparent;
+            border: 1px solid #555;
+            color: #eee;
+        }
+
+        /* SERVICES */
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .service-card {
+            padding: 25px;
+            background: #1d1d1d;
+            border: 1px solid #303030;
+            border-radius: 12px;
+        }
+
+        .service-card .service-icon {
+            font-size: 2rem;
+            margin-bottom: 12px;
+        }
+
+        .service-card h3 {
+            font-size: 1.08rem;
+            margin-bottom: 8px;
+        }
+
+        .service-card p {
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+
+        /* ABOUT */
+
+        .about-section {
+            background: #171717;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 0.9fr 1.1fr;
+            gap: 45px;
+            align-items: center;
+        }
+
+        .about-visual {
+            min-height: 330px;
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            display: grid;
+            place-items: center;
+            text-align: center;
+            padding: 30px;
+            background:
+                radial-gradient(circle at center, rgba(217,173,69,0.16), transparent 65%),
+                #202020;
+        }
+
+        .about-monogram {
+            width: 145px;
+            height: 145px;
+            display: grid;
+            place-items: center;
+            border: 3px solid var(--gold);
+            border-radius: 30px;
+            color: var(--gold);
+            font-size: 2.8rem;
+            font-weight: 900;
+            margin: 0 auto 20px;
+        }
+
+        .about-visual h3 {
+            font-size: 1.3rem;
+        }
+
+        .about-visual p {
+            color: var(--muted);
+            font-size: 0.85rem;
+        }
+
+        .about-copy .eyebrow {
+            color: var(--gold);
+            font-size: 0.8rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .about-copy h2 {
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            line-height: 1.25;
+            margin: 10px 0 20px;
+        }
+
+        .about-copy p {
+            color: #c5c5c5;
+            margin-bottom: 14px;
+        }
+
+        .about-list {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .about-list li {
+            margin-bottom: 10px;
+        }
+
+        .about-list li::before {
+            content: "✓";
+            color: var(--gold);
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        /* CONTACT */
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+        }
+
+        .contact-card {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            background: #1d1d1d;
+            border: 1px solid #303030;
+            padding: 23px;
+            border-radius: 10px;
+        }
+
+        .contact-icon {
+            width: 45px;
+            height: 45px;
+            display: grid;
+            place-items: center;
+            flex-shrink: 0;
+            border-radius: 9px;
+            background: rgba(217,173,69,0.12);
+            font-size: 1.3rem;
+        }
+
+        .contact-card h3 {
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+
+        .contact-card p,
+        .contact-card a {
+            color: var(--muted);
+            font-size: 0.9rem;
+            overflow-wrap: anywhere;
+        }
+
+        .contact-card a:hover {
+            color: var(--gold);
+        }
+
+        .location-box {
+            margin-top: 25px;
+            padding: 25px;
+            background: linear-gradient(135deg, #262114, #1b1b1b);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .location-box h3 {
+            margin-bottom: 5px;
+        }
+
+        .location-box p {
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #090909;
+            border-top: 1px solid var(--border);
+            padding: 35px 0 18px;
+        }
+
+        .footer-main {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            flex-wrap: wrap;
+            padding-bottom: 25px;
+        }
+
+        .footer-brand {
+            max-width: 380px;
+        }
+
+        .footer-brand h3 {
+            font-size: 1.15rem;
+            margin-bottom: 8px;
+        }
+
+        .footer-brand p {
+            color: var(--muted);
+            font-size: 0.87rem;
+        }
+
+        .footer-links h4 {
+            color: var(--gold);
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            display: block;
+            color: var(--muted);
+            font-size: 0.87rem;
+            margin-bottom: 7px;
+        }
+
+        .footer-links a:hover {
+            color: var(--gold);
+        }
+
+        .footer-bottom {
+            padding-top: 17px;
+            border-top: 1px solid #272727;
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+            flex-wrap: wrap;
+            color: #858585;
+            font-size: 0.8rem;
+        }
+
+        /* FLOATING TELEGRAM BUTTON */
+
+        .floating-telegram {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            z-index: 900;
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            background: var(--green);
+            color: #111;
+            font-size: 1.55rem;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+            transition: transform 0.2s;
+        }
+
+        .floating-telegram:hover {
+            transform: scale(1.08);
+        }
+
+        .toast {
+            position: fixed;
+            bottom: 90px;
+            right: 20px;
+            z-index: 1200;
+            background: var(--gold);
+            color: #111;
+            font-weight: bold;
+            padding: 12px 18px;
+            border-radius: 8px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.3);
+            opacity: 0;
+            transform: translateY(10px);
+            pointer-events: none;
+            transition: 0.25s;
+            max-width: 300px;
+        }
+
+        .toast.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* RESPONSIVE DESIGN */
+
+        @media (max-width: 1000px) {
+            .nav-links {
+                gap: 13px;
+            }
+
+            .nav-links a {
+                font-size: 0.82rem;
+            }
+
+            .product-grid {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+
+            .hero-grid {
+                gap: 30px;
+            }
+
+            .category-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 760px) {
+            .navbar {
+                min-height: 70px;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                right: 0;
+                padding: 20px 4%;
+                background: #151515;
+                border-bottom: 1px solid var(--border);
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0;
+            }
+
+            .nav-links.open {
+                display: flex;
+            }
+
+            .nav-links a {
+                display: block;
+                padding: 12px 5px;
+                font-size: 0.95rem;
+            }
+
+            .nav-order {
+                text-align: center;
+                margin-top: 8px;
+            }
+
+            .hero {
+                padding: 65px 0;
+            }
+
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-card {
+                padding: 24px;
+            }
+
+            .benefit-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .product-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 12px;
+            }
+
+            .product-info {
+                padding: 12px;
+            }
+
+            .product-visual {
+                min-height: 105px;
+            }
+
+            .product-emoji {
+                font-size: 2.6rem;
+            }
+
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 28px;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .location-box {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                width: 93%;
+            }
+
+            .brand-text strong {
+                font-size: 0.8rem;
+            }
+
+            .brand-text span {
+                font-size: 0.65rem;
+            }
+
+            .brand-logo {
+                width: 40px;
+                height: 40px;
+                font-size: 0.9rem;
+            }
+
+            .hero h1 {
+                font-size: 2.4rem;
+            }
+
+            .hero-description {
+                font-size: 0.95rem;
+            }
+
+            .hero-buttons .btn {
+                width: 100%;
+            }
+
+            .section {
+                padding: 55px 0;
+            }
+
+            .category-grid {
+                gap: 10px;
+            }
+
+            .category-card {
+                padding: 20px 10px;
+            }
+
+            .category-card h3 {
+                font-size: 0.9rem;
+            }
+
+            .shop-toolbar {
+                flex-direction: column;
+            }
+
+            .filter-select {
+                width: 100%;
+            }
+
+            .product-grid {
+                gap: 9px;
+            }
+
+            .product-info h3 {
+                font-size: 0.87rem;
+            }
+
+            .product-description {
+                font-size: 0.75rem;
+            }
+
+            .product-price {
+                font-size: 0.9rem;
+            }
+
+            .add-to-cart {
+                padding: 9px 5px;
+                font-size: 0.75rem;
+            }
+
+            .cart-container {
+                padding: 15px;
+            }
+
+            .cart-item {
+                grid-template-columns: 1fr auto;
+                gap: 8px;
+            }
+
+            .cart-item-controls {
+                grid-column: 1 / -1;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .cart-actions {
+                flex-direction: column;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-visual {
+                min-height: 270px;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+            }
+
+            .floating-telegram {
+                width: 52px;
+                height: 52px;
+                right: 14px;
+                bottom: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ANNOUNCEMENT -->
+    <div class="announcement">
+        Your Trusted Printing, Stationery & Office Supply Partner in Bishoftu
+    </div>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container navbar">
+
+            <a href="#home" class="brand" aria-label="Fedesa Printing and Stationery House home">
+                <div class="brand-logo">FA</div>
+                <div class="brand-text">
+                    <strong>FEDESA PRINTING</strong>
+                    <span>AND STATIONERY HOUSE</span>
+                </div>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false">
+                ☰
+            </button>
+
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#products">Products & Prices</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <a href="#cart" class="nav-order">
+                            🛒 My Order (<span id="navCartCount">0</span>)
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero" id="home">
+            <div class="container hero-grid">
+
+                <div class="hero-content">
+                    <div class="hero-label">
+                        ✦ QUALITY • SERVICE • VALUE
+                    </div>
+
+                    <h1>
+                        Everything You Need.<br>
+                        <span>All in One Place.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Welcome to Fedesa Printing and Stationery House.
+                        Find stationery, school supplies, office materials,
+                        and reliable printing services in Bishoftu, Ethiopia.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#products" class="btn btn-gold">
+                            Explore Products →
+                        </a>
+
+                        <a href="#contact" class="btn btn-outline">
+                            Contact Us
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-card">
+                    <div class="hero-card-top">
+                        <h3>What We Offer</h3>
+                        <span class="gold-star">✦</span>
+                    </div>
+
+                    <div class="hero-feature">
+                        <div class="feature-icon">✏️</div>
+                        <div>
+                            <strong>Stationery & School Supplies</strong>
+                            <small>Everyday essentials for students</small>
+                        </div>
+                    </div>
+
+                    <div class="hero-feature">
+                        <div class="feature-icon">📄</div>
+                        <div>
+                            <strong>Printing & Photocopying</strong>
+                            <small>Black-and-white and color services</small>
+                        </div>
+                    </div>
+
+                    <div class="hero-feature">
+                        <div class="feature-icon">🗂️</div>
+                        <div>
+                            <strong>Office Materials</strong>
+                            <small>Practical supplies for your workplace</small>
+                        </div>
+                    </div>
+
+                    <div class="hero-feature">
+                        <div class="feature-icon">📲</div>
+                        <div>
+                            <strong>Convenient Ordering</strong>
+                            <small>Prepare your order and send it through Telegram</small>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- BENEFITS -->
+        <section class="benefits">
+            <div class="container benefit-grid">
+
+                <div class="benefit">
+                    <span>⭐</span>
+                    <strong>Quality Products</strong>
+                    <p>Supplies for school and work</p>
+                </div>
+
+                <div class="benefit">
+                    <span>🏷️</span>
+                    <strong>Visible Prices</strong>
+                    <p>Check prices before ordering</p>
+                </div>
+
+                <div class="benefit">
+                    <span>🖨️</span>
+                    <strong>Printing Services</strong>
+                    <p>Printing, copying and more</p>
+                </div>
+
+                <div class="benefit">
+                    <span>📍</span>
+                    <strong>Bishoftu, Ethiopia</strong>
+                    <p>Find us around Miran Grand Hotel</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CATEGORIES -->
+        <section class="section" id="categories">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="eyebrow">Browse Our Store</span>
+                    <h2>Shop by <span class="gold">Category</span></h2>
+                    <p>
+                        Choose a category to find the products or services
+                        you need.
+                    </p>
+                </div>
+
+                <div class="category-grid">
+
+                    <div class="category-card" data-category="writing">
+                        <div class="category-icon">✏️</div>
+                        <h3>Writing Materials</h3>
+                        <p>Pens, pencils and markers</p>
+                    </div>
+
+                    <div class="category-card" data-category="paper">
+                        <div class="category-icon">📚</div>
+                        <h3>Paper & Notebooks</h3>
+                        <p>Exercise books and paper</p>
+                    </div>
+
+                    <div class="category-card" data-category="school">
+                        <div class="category-icon">🎒</div>
+                        <h3>School Supplies</h3>
+                        <p>Compasses, calculators and more</p>
+                    </div>
+
+                    <div class="category-card" data-category="office">
+                        <div class="category-icon">🗂️</div>
+                        <h3>Office Supplies</h3>
+                        <p>Files, staplers and accessories</p>
+                    </div>
+
+                    <div class="category-card" data-category="printing">
+                        <div class="category-icon">🖨️</div>
+                        <h3>Printing Services</h3>
+                        <p>Printing and photocopying</p>
+                    </div>
+
+                    <div class="category-card" data-category="printing">
+                        <div class="category-icon">📑</div>
+                        <h3>Document Services</h3>
+                        <p>Scanning, typing and lamination</p>
+                    </div>
+
+                    <div class="category-card" data-category="ink">
+                        <div class="category-icon">🖋️</div>
+                        <h3>Printer Ink</h3>
+                        <p>Epson ink and ink packs</p>
+                    </div>
+
+                    <div class="category-card" data-category="office">
+                        <div class="category-icon">📦</div>
+                        <h3>Office Essentials</h3>
+                        <p>Thermal paper and box files</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- PRODUCTS -->
+        <section class="section products-section" id="products">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="eyebrow">Our Product Catalogue</span>
+                    <h2>Products & <span class="gold">Prices</span></h2>
+                    <p>
+                        Browse our available items, compare prices in Ethiopian
+                        Birr (ETB), and add products to your order.
+                    </p>
+                </div>
+
+                <div class="shop-toolbar">
+
+                    <div class="search-box">
+                        <input
+                            type="search"
+                            id="productSearch"
+                            placeholder="🔍 Search products or services..."
+                            aria-label="Search products or services"
+                        >
+                    </div>
+
+                    <select id="categoryFilter"
+                            class="filter-select"
+                            aria-label="Filter by category">
+                        <option value="all">All Categories</option>
+                        <option value="writing">Writing Materials</option>
+                        <option value="paper">Paper & Notebooks</option>
+                        <option value="school">School Supplies</option>
+                        <option value="office">Office Supplies</option>
+                        <option value="printing">Printing Services</option>
+                        <option value="ink">Printer Ink</option>
+                    </select>
+
+                </div>
+
+                <p class="results-count" id="resultsCount"></p>
+
+                <div class="product-grid" id="productGrid"></div>
+
+                <div class="empty-results" id="emptyResults">
+                    <h3>No products found</h3>
+                    <p>Try a different search word or category.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CART -->
+        <section class="section cart-section" id="cart">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="eyebrow">Your Shopping List</span>
+                    <h2>Your <span class="gold">Order</span></h2>
+                    <p>
+                        Add products above, adjust quantities, and send
+                        your order request through Telegram.
+                    </p>
+                </div>
+
+                <div class="cart-container">
+
+                    <div class="cart-header">
+                        <h3>🛒 Selected Products</h3>
+                        <span class="cart-badge" id="cartCount">0</span>
+                    </div>
+
+                    <div class="cart-empty" id="cartEmpty">
+                        <span>🛍️</span>
+                        <strong>Your order list is empty.</strong>
+                        <p>Browse the catalogue and add products to get started.</p>
+                    </div>
+
+                    <div class="cart-list" id="cartList"></div>
+
+                    <div class="cart-summary" id="cartSummary" hidden>
+
+                        <div class="cart-total-row">
+                            <span>Estimated total</span>
+                            <strong id="cartTotal">0 ETB</strong>
+                        </div>
+
+                        <p class="cart-note">
+                            Note: For products with a price range, the total
+                            uses the lowest listed price as an estimate.
+                            The final price must be confirmed by the shop.
+                        </p>
+
+                        <div class="cart-actions">
+                            <button class="btn btn-clear" id="clearCart">
+                                Clear Order
+                            </button>
+
+                            <button class="btn btn-telegram" id="sendOrder">
+                                ✈ Send Order via Telegram
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section class="section" id="services">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="eyebrow">Professional Services</span>
+                    <h2>Printing & <span class="gold">Document Services</span></h2>
+                    <p>
+                        Get everyday document services for school, business,
+                        office, and personal use.
+                    </p>
+                </div>
+
+                <div class="services-grid">
+
+                    <div class="service-card">
+                        <div class="service-icon">🖨️</div>
+                        <h3>Printing</h3>
+                        <p>
+                            Black-and-white and color printing for documents
+                            and other everyday printing needs.
+                        </p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">📄</div>
+                        <h3>Photocopying</h3>
+                        <p>
+                            Black-and-white and color photocopying for
+                            schoolwork, office documents, and more.
+                        </p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">💻</div>
+                        <h3>Document Typing</h3>
+                        <p>
+                            Typing services for documents and other
+                            text-based work.
+                        </p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">📑</div>
+                        <h3>Document Scanning</h3>
+                        <p>
+                            Scan paper documents into digital files for
+                            convenient storage and sharing.
+                        </p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">🪪</div>
+                        <h3>Lamination</h3>
+                        <p>
+                            Lamination for documents and paper materials,
+                            with pricing depending on the service.
+                        </p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">🖋️</div>
+                        <h3>Printer Ink & Supplies</h3>
+                        <p>
+                            Epson inkjet products and other listed
+                            stationery and office supplies.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="section about-section" id="about">
+            <div class="container about-grid">
+
+                <div class="about-visual">
+                    <div>
+                        <div class="about-monogram">FA</div>
+                        <h3>FEDESA PRINTING</h3>
+                        <p>AND STATIONERY HOUSE</p>
+                    </div>
+                </div>
+
+                <div class="about-copy">
+                    <span class="eyebrow">About Our Business</span>
+
+                    <h2>Your Everyday Partner for <span class="gold">School & Office</span></h2>
+
+                    <p>
+                        Fedesa Printing and Stationery House serves customers
+                        looking for stationery, school supplies, office
+                        materials, printer ink, and document services.
+                    </p>
+
+                    <p>
+                        Our online catalogue helps customers explore listed
+                        products and prices before contacting us to place an
+                        order or confirm product details.
+                    </p>
+
+                    <ul class="about-list">
+                        <li>Stationery and school essentials</li>
+                        <li>Office materials and printer ink</li>
+                        <li>Printing, photocopying and scanning</li>
+                        <li>Prices displayed in Ethiopian Birr (ETB)</li>
+                        <li>Convenient order requests through Telegram</li>
+                    </ul>
+
+                    <br>
+
+                    <a href="#products" class="btn btn-gold">
+                        Browse Our Catalogue →
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="section" id="contact">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="eyebrow">Get in Touch</span>
+                    <h2>Contact <span class="gold">Us</span></h2>
+                    <p>
+                        Have a question about a product, price, or service?
+                        Contact Fedesa Printing and Stationery House.
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+
+                    <div class="contact-card">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h3>Phone Numbers</h3>
+                            <p>
+                                <a href="tel:+251912229367">+251 912 229 367</a>
+                            </p>
+                            <p>
+                                <a href="tel:+251968474908">+251 968 474 908</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <h3>Email Address</h3>
+                            <p>
+                                <a href="mailto:fedhasabiru@gmail.com">
+                                    fedhasabiru@gmail.com
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">✈️</div>
+                        <div>
+                            <h3>Telegram</h3>
+                            <p>
+                                <a href="https://t.me/adugnahundera"
+                                   target="_blank"
+                                   rel="noopener noreferrer">
+                                    @adugnahundera
+                                </a>
+                            </p>
+                            <p>Send inquiries and order requests.</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Bishoftu, Ethiopia</p>
+                            <p>Around Miran Grand Hotel</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="location-box">
+                    <div>
+                        <h3>Visit Us in <span class="gold">Bishoftu</span></h3>
+                        <p>
+                            Around Miran Grand Hotel, Bishoftu, Ethiopia.
+                        </p>
+                    </div>
+
+                    <a
+                        class="btn btn-gold"
+                        href="https://www.google.com/maps/search/?api=1&query=Miran+Grand+Hotel+Bishoftu+Ethiopia"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        📍 Open Map
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+
+            <div class="footer-main">
+
+                <div class="footer-brand">
+                    <h3>
+                        <span class="gold">FA</span> FEDESA PRINTING
+                        AND STATIONERY HOUSE
+                    </h3>
+
+                    <p>
+                        Stationery, school supplies, office materials,
+                        printing and document services in Bishoftu, Ethiopia.
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#products">Products & Prices</a>
+                    <a href="#services">Our Services</a>
+                    <a href="#about">About Us</a>
+                    <a href="#contact">Contact</a>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <a href="tel:+251912229367">+251 912 229 367</a>
+                    <a href="tel:+251968474908">+251 968 474 908</a>
+                    <a href="mailto:fedhasabiru@gmail.com">Send Email</a>
+                    <a href="https://t.me/adugnahundera"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Telegram
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>
+                    © <span id="currentYear"></span>
+                    Fedesa Printing and Stationery House. All rights reserved.
+                </p>
+
+                <p>
+                    Made for your school and office needs.
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- FLOATING TELEGRAM BUTTON -->
+    <a
+        class="floating-telegram"
+        href="https://t.me/adugnahundera"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Contact us on Telegram"
+        title="Contact us on Telegram">
+        ✈
+    </a>
+
+    <!-- NOTIFICATION -->
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script>
+        /*
+        ==========================================================
+        FEDESA PRINTING AND STATIONERY HOUSE
+        Product prices supplied by the business owner.
+        All prices are displayed in Ethiopian Birr (ETB).
+        ==========================================================
+        */
+
+        const TELEGRAM_USERNAME = "adugnahundera";
+
+        /*
+        For products with a price range:
+        - price is the lowest listed price used for the estimated cart total.
+        - maxPrice is the highest listed price.
+        - The website shows the full price range.
+        */
+
+        const products = [
+
+            // A. WRITING MATERIALS
+            {
+                id: 1,
+                name: "Ballpoint Pen",
+                category: "writing",
+                price: 50,
+                emoji: "🖊️",
+                description: "Everyday writing pen."
+            },
+            {
+                id: 2,
+                name: "Pencil",
+                category: "writing",
+                price: 20,
+                emoji: "✏️",
+                description: "For writing, drawing and schoolwork."
+            },
+            {
+                id: 3,
+                name: "Eraser",
+                category: "writing",
+                price: 30,
+                emoji: "🧽",
+                description: "For erasing pencil marks."
+            },
+            {
+                id: 4,
+                name: "Sharpener",
+                category: "writing",
+                price: 50,
+                emoji: "🔺",
+                description: "For sharpening pencils."
+            },
+            {
+                id: 5,
+                name: "Ruler",
+                category: "writing",
+                price: 100,
+                emoji: "📏",
+                description: "For measuring and drawing straight lines."
+            },
+            {
+                id: 6,
+                name: "Marker",
+                category: "writing",
+                price: 120,
+                emoji: "🖍️",
+                description: "For writing, labeling and marking."
+            },
+            {
+                id: 7,
+                name: "Highlighter",
+                category: "writing",
+                price: 480,
+                emoji: "🖍️",
+                description: "For highlighting important information."
+            },
+
+            // B. PAPER AND NOTEBOOKS
+            {
+                id: 8,
+                name: "Exercise Book",
+                category: "paper",
+                price: 70,
+                maxPrice: 100,
+                emoji: "📓",
+                description: "Exercise books for school and everyday notes."
+            },
+            {
+                id: 9,
+                name: "A4 Paper — One Sheet",
+                category: "paper",
+                price: 5,
+                emoji: "📄",
+                description: "Individual A4 sheet."
+            },
+            {
+                id: 10,
+                name: "A4 Paper — Ream of 500 Sheets",
+                category: "paper",
+                price: 1000,
+                maxPrice: 1400,
+                emoji: "📚",
+                description: "One ream of A4 paper, containing 500 sheets."
+            },
+            {
+                id: 11,
+                name: "Envelope",
+                category: "paper",
+                price: 20,
+                emoji: "✉️",
+                description: "For letters and documents."
+            },
+            {
+                id: 12,
+                name: "Drawing Book",
+                category: "paper",
+                price: 150,
+                emoji: "🎨",
+                description: "For drawing and creative schoolwork."
+            },
+
+            // C. SCHOOL SUPPLIES
+            {
+                id: 13,
+                name: "Compass",
+                category: "school",
+                price: 300,
+                emoji: "📐",
+                description: "Geometry compass for mathematical drawing."
+            },
+            {
+                id: 14,
+                name: "Calculator",
+                category: "school",
+                price: 300,
+                maxPrice: 1400,
+                emoji: "🧮",
+                description: "Calculators at different price points."
+            },
+            {
+                id: 15,
+                name: "Crayon / Color Pencil Set",
+                category: "school",
+                price: 140,
+                maxPrice: 200,
+                emoji: "🖍️",
+                description: "Coloring supplies for school and art."
+            },
+
+            // D. OFFICE SUPPLIES
+            {
+                id: 16,
+                name: "Stapler",
+                category: "office",
+                price: 600,
+                maxPrice: 900,
+                emoji: "📎",
+                description: "Staplers at different price points."
+            },
+            {
+                id: 17,
+                name: "Staples — One Box",
+                category: "office",
+                price: 100,
+                emoji: "📌",
+                description: "One box of staples."
+            },
+            {
+                id: 18,
+                name: "File / Folder",
+                category: "office",
+                price: 400,
+                emoji: "📁",
+                description: "For organizing and storing documents."
+            },
+            {
+                id: 19,
+                name: "Glue",
+                category: "office",
+                price: 100,
+                emoji: "🧴",
+                description: "For paper and everyday stationery tasks."
+            },
+            {
+                id: 20,
+                name: "Scissors",
+                category: "office",
+                price: 80,
+                maxPrice: 300,
+                emoji: "✂️",
+                description: "Scissors at different price points."
+            },
+            {
+                id: 21,
+                name: "Tape",
+                category: "office",
+                price: 50,
+                maxPrice: 800,
+                emoji: "🟨",
+                description: "Tape options at different price points."
+            },
+            {
+                id: 22,
+                name: "Paper Punch",
+                category: "office",
+                price: 800,
+                emoji: "🗜️",
+                description: "For punching holes in paper."
+            },
+            {
+                id: 23,
+                name: "Box File / Kent",
+                category: "office",
+                price: 400,
+                emoji: "🗃️",
+                description: "For organizing and storing office documents."
+            },
+            {
+                id: 24,
+                name: "Thermal Paper",
+                category: "office",
+                price: 65,
+                maxPrice: 100,
+                emoji: "🧾",
+                description: "Thermal paper at different price points."
+            },
+
+            // E. PRINTING AND COPYING SERVICES
+            {
+                id: 25,
+                name: "Black-and-White Printing — A4 Page",
+                category: "printing",
+                price: 10,
+                emoji: "🖨️",
+                description: "Black-and-white printing per A4 page."
+            },
+            {
+                id: 26,
+                name: "Color Printing — A4 Page",
+                category: "printing",
+                price: 30,
+                emoji: "🌈",
+                description: "Color printing per A4 page."
+            },
+            {
+                id: 27,
+                name: "Black-and-White Photocopy — A4 Page",
+                category: "printing",
+                price: 10,
+                emoji: "📄",
+                description: "Black-and-white photocopy per A4 page."
+            },
+            {
+                id: 28,
+                name: "Color Photocopy — A4 Page",
+                category: "printing",
+                price: 30,
+                emoji: "🗒️",
+                description: "Color photocopy per A4 page."
+            },
+            {
+                id: 29,
+                name: "Document Scanning — One Page",
+                category: "printing",
+                price: 20,
+                emoji: "📑",
+                description: "Document scanning per page."
+            },
+            {
+                id: 30,
+                name: "Typing — One Page",
+                category: "printing",
+                price: 50,
+                emoji: "⌨️",
+                description: "Document typing per page."
+            },
+            {
+                id: 31,
+                name: "Lamination — A4 Page",
+                category: "printing",
+                price: 25,
+                maxPrice: 50,
+                emoji: "🪪",
+                description: "A4 lamination; price depends on the option."
+            },
+
+            // F. PRINTER INK
+            {
+                id: 32,
+                name: "Epson Inkjet — Pack",
+                category: "ink",
+                price: 1500,
+                emoji: "🖋️",
+                description: "Epson inkjet ink pack."
+            },
+            {
+                id: 33,
+                name: "Epson Black Inkjet",
+                category: "ink",
+                price: 500,
+                emoji: "🖋️",
+                description: "Epson black inkjet ink."
+            }
+
+        ];
+
+        const categoryNames = {
+            writing: "Writing Materials",
+            paper: "Paper & Notebooks",
+            school: "School Supplies",
+            office: "Office Supplies",
+            printing: "Printing Services",
+            ink: "Printer Ink"
+        };
+
+        let cart = [];
+
+        const productGrid = document.getElementById("productGrid");
+        const productSearch = document.getElementById("productSearch");
+        const categoryFilter = document.getElementById("categoryFilter");
+        const resultsCount = document.getElementById("resultsCount");
+        const emptyResults = document.getElementById("emptyResults");
+
+        const cartList = document.getElementById("cartList");
+        const cartEmpty = document.getElementById("cartEmpty");
+        const cartSummary = document.getElementById("cartSummary");
+        const cartCount = document.getElementById("cartCount");
+        const navCartCount = document.getElementById("navCartCount");
+        const cartTotal = document.getElementById("cartTotal");
+
+        // Format prices as Ethiopian Birr.
+        function formatPrice(amount) {
+            return amount.toLocaleString("en-US") + " ETB";
+        }
+
+        // Display a product price or price range.
+        function displayPrice(product) {
+            if (product.maxPrice !== undefined) {
+                return formatPrice(product.price) +
+                    " – " +
+                    formatPrice(product.maxPrice);
+            }
+
+            return formatPrice(product.price);
+        }
+
+        // Display the product catalogue.
+        function renderProducts() {
+            const searchTerm = productSearch.value.trim().toLowerCase();
+            const selectedCategory = categoryFilter.value;
+
+            const filteredProducts = products.filter(product => {
+                const matchesSearch =
+                    product.name.toLowerCase().includes(searchTerm) ||
+                    product.description.toLowerCase().includes(searchTerm) ||
+                    categoryNames[product.category].toLowerCase().includes(searchTerm);
+
+                const matchesCategory =
+                    selectedCategory === "all" ||
+                    product.category === selectedCategory;
+
+                return matchesSearch && matchesCategory;
+            });
+
+            productGrid.innerHTML = "";
+
+            resultsCount.textContent =
+                "Showing " + filteredProducts.length +
+                " of " + products.length + " products and services";
+
+            emptyResults.style.display =
+                filteredProducts.length === 0 ? "block" : "none";
+
+            filteredProducts.forEach(product => {
+                const card = document.createElement("article");
+                card.className = "product-card";
+
+                const priceNote = product.maxPrice !== undefined
+                    ? '<div class="price-note">Price varies by option</div>'
+                    : "";
+
+                card.innerHTML = `
+                    <div class="product-visual">
+                        <span class="product-category-label">
+                            ${categoryNames[product.category]}
+                        </span>
+                        <span class="product-emoji">${product.emoji}</span>
+                    </div>
+
+                    <div class="product-info">
+                        <h3>${product.name}</h3>
+
+                        <p class="product-description">
+                            ${product.description}
+                        </p>
+
+                        <div class="product-price">
+                            ${displayPrice(product)}
+                            ${priceNote}
+                        </div>
+
+                        <button
+                            class="add-to-cart"
+                            data-product-id="${product.id}">
+                            + Add to Order
+                        </button>
+                    </div>
+                `;
+
+                productGrid.appendChild(card);
+            });
+        }
+
+        // Add a product to the shopping list.
+        function addToCart(productId) {
+            const product = products.find(item => item.id === productId);
+
+            if (!product) return;
+
+            const existingItem = cart.find(item => item.id === productId);
+
+            if (existingItem) {
+                existingItem.quantity += 1;
+            } else {
+                cart.push({
+                    id: product.id,
+                    name: product.name,
+                    price: product.price,
+                    maxPrice: product.maxPrice,
+                    quantity: 1
+                });
+            }
+
+            renderCart();
+            showToast(product.name + " added to your order.");
+        }
+
+        // Update product quantity.
+        function changeQuantity(productId, change) {
+            const item = cart.find(product => product.id === productId);
+
+            if (!item) return;
+
+            item.quantity += change;
+
+            if (item.quantity <= 0) {
+                cart = cart.filter(product => product.id !== productId);
+            }
+
+            renderCart();
+        }
+
+        // Remove an item from the cart.
+        function removeFromCart(productId) {
+            cart = cart.filter(product => product.id !== productId);
+            renderCart();
+            showToast("Product removed from your order.");
+        }
+
+        // Render the cart and estimated total.
+        function renderCart() {
+            cartList.innerHTML = "";
+
+            const totalQuantity = cart.reduce(
+                (sum, item) => sum + item.quantity,
+                0
+            );
+
+            cartCount.textContent = totalQuantity;
+            navCartCount.textContent = totalQuantity;
+
+            cartEmpty.style.display = cart.length === 0 ? "block" : "none";
+            cartSummary.hidden = cart.length === 0;
+
+            let estimatedTotal = 0;
+
+            cart.forEach(item => {
+                estimatedTotal += item.price * item.quantity;
+
+                const itemElement = document.createElement("div");
+                itemElement.className = "cart-item";
+
+                const itemPrice = item.maxPrice !== undefined
+                    ? formatPrice(item.price) + " – " + formatPrice(item.maxPrice)
+                    : formatPrice(item.price);
+
+                itemElement.innerHTML = `
+                    <div>
+                        <div class="cart-item-name">${item.name}</div>
+                        <div class="cart-item-price">
+                            ${itemPrice} each
+                        </div>
+                        <button
+                            class="remove-item"
+                            data-remove-id="${item.id}">
+                            Remove
+                        </button>
+                    </div>
+
+                    <div class="cart-item-controls">
+                        <div class="quantity-control">
+                            <button
+                                data-quantity-id="${item.id}"
+                                data-change="-1"
+                                aria-label="Decrease quantity">
+                                −
+                            </button>
+
+                            <span>${item.quantity}</span>
+
+                            <button
+                                data-quantity-id="${item.id}"
+                                data-change="1"
+                                aria-label="Increase quantity">
+                                +
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="cart-item-price">
+                        ${formatPrice(item.price * item.quantity)}
+                    </div>
+                `;
+
+                cartList.appendChild(itemElement);
+            });
+
+            cartTotal.textContent = formatPrice(estimatedTotal);
+        }
+
+        // Notifications.
+        let toastTimer;
+
+        function showToast(message) {
+            const toast = document.getElementById("toast");
+
+            toast.textContent = message;
+            toast.classList.add("show");
+
+            clearTimeout(toastTimer);
+
+            toastTimer = setTimeout(() => {
+                toast.classList.remove("show");
+            }, 2500);
+        }
+
+        // Add-to-cart buttons.
+        productGrid.addEventListener("click", event => {
+            const button = event.target.closest("[data-product-id]");
+
+            if (!button) return;
+
+            addToCart(Number(button.dataset.productId));
+        });
+
+        // Quantity buttons and remove buttons.
+        cartList.addEventListener("click", event => {
+            const quantityButton = event.target.closest("[data-quantity-id]");
+
+            if (quantityButton) {
+                changeQuantity(
+                    Number(quantityButton.dataset.quantityId),
+                    Number(quantityButton.dataset.change)
+                );
+
+                return;
+            }
+
+            const removeButton = event.target.closest("[data-remove-id]");
+
+            if (removeButton) {
+                removeFromCart(Number(removeButton.dataset.removeId));
+            }
+        });
+
+        // Search and category filters.
+        productSearch.addEventListener("input", renderProducts);
+        categoryFilter.addEventListener("change", renderProducts);
+
+        // Clicking a category card filters the catalogue.
+        document.querySelectorAll(".category-card").forEach(card => {
+            card.addEventListener("click", () => {
+                categoryFilter.value = card.dataset.category;
+                renderProducts();
+
+                document.getElementById("products").scrollIntoView({
+                    behavior: "smooth"
+                });
+            });
+        });
+
+        // Clear the cart.
+        document.getElementById("clearCart").addEventListener("click", () => {
+            if (cart.length === 0) return;
+
+            cart = [];
+            renderCart();
+            showToast("Your order list has been cleared.");
+        });
+
+        /*
+        Create a Telegram order message.
+
+        The customer can review the draft in Telegram before sending it.
+        The website does not automatically submit the order.
+        */
+
+        document.getElementById("sendOrder").addEventListener("click", () => {
+            if (cart.length === 0) {
+                showToast("Please add products before ordering.");
+                return;
+            }
+
+            let estimatedTotal = 0;
+
+            const orderLines = cart.map(item => {
+                estimatedTotal += item.price * item.quantity;
+
+                let line = "• " + item.name +
+                    " × " + item.quantity +
+                    " = " + formatPrice(item.price * item.quantity);
+
+                if (item.maxPrice !== undefined) {
+                    line +=
+                        "\n  Listed price range: " +
+                        formatPrice(item.price) +
+                        " – " +
+                        formatPrice(item.maxPrice) +
+                        " each";
+                }
+
+                return line;
+            });
+
+            const message =
+                "Hello Fedesa Printing and Stationery House!\n\n" +
+                "I would like to inquire about the following order:\n\n" +
+                orderLines.join("\n") +
+                "\n\nEstimated total (using lowest listed prices): " +
+                formatPrice(estimatedTotal) +
+                "\n\nPlease confirm availability and the final price. " +
+                "Thank you!";
+
+            const telegramUrl =
+                "https://t.me/" +
+                TELEGRAM_USERNAME +
+                "?text=" +
+                encodeURIComponent(message);
+
+            window.open(telegramUrl, "_blank", "noopener,noreferrer");
+        });
+
+        // Mobile navigation.
+        const menuToggle = document.getElementById("menuToggle");
+        const navLinks = document.getElementById("navLinks");
+
+        menuToggle.addEventListener("click", () => {
+            const isOpen = navLinks.classList.toggle("open");
+
+            menuToggle.setAttribute("aria-expanded", String(isOpen));
+            menuToggle.textContent = isOpen ? "✕" : "☰";
+        });
+
+        // Close mobile navigation after selecting a link.
+        navLinks.querySelectorAll("a").forEach(link => {
+            link.addEventListener("click", () => {
+                navLinks.classList.remove("open");
+                menuToggle.setAttribute("aria-expanded", "false");
+                menuToggle.textContent = "☰";
+            });
+        });
+
+        // Current year in the footer.
+        document.getElementById("currentYear").textContent =
+            new Date().getFullYear();
+
+        // Initial page rendering.
+        renderProducts();
+        renderCart();
+    </script>
+
+</body>
+</html>
